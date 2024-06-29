@@ -1,0 +1,15 @@
+.p1{
+    text-transform: capitalize;
+    color: red;
+    font-size: 30px;
+}
+
+.p2{
+    text-transform: lowercase;
+    color:blue;
+    font-family: Arial, sans-serif;
+}
+
+.paragrafo{
+    border: 3px dashed aqua;
+}
