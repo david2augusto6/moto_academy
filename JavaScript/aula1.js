@@ -1,76 +1,94 @@
-/*
-const number = 1; //number
-const string = "text"; //string
-const bool = true; // booleano (lógico)
-const nulo = null; 
-const undef = undefined;
-
-const objeto = {
-    nome: "David",
-    idade:22,
+/* function nomeFuncao(par){
 }
 
-objeto.nome = "Augusto";
 
-const array = [5, "três", false, function teste() {
+const funcao = nomeFuncao()
 
-}];
+const array = ["string", 12132132, true, funcao];
 
-const sum = 4 + 9;
-const sub = 4 - 9;
-const mult = 4 * 9;
-const div = 4 / 9;
-*/
+console.log(array);
 
+const numeros = [1, 2, 3, 4]
+numeros.push(5)
 
-/*
-variavel = 123456;
-const constante = "constante" //CONSTANTE;
+numeros.map(
+    (item) => {
+        console.log(item)
+    }
+)
 
-
-
-let variavel2 = "valor fora"; // escopo local (contexto de bloco)
-function teste(){
-    let variavel2 = "valor dentro";
-    variavel2 = "mudamos os dois"
-    console.log(variavel2);
-}
-
-teste();
-console.log(variavel2)*/
-
-/* 
-
-function teste(){
-    var global = "oi";
-    teste2()
-}
-
-function teste2(){
-    global = "tchau";
-}
-
-teste();
-console.log(global);
+console.log(numeros.filter((item)=>item != 2))
  */
-/* 
-let numero = 22
-if (numero === "22"){
-    console.log("é igual")
-}else{
-    console.log("não é igual")
+
+/* const pessoa = {
+    nome: "João",
+    idade: 25,
+    profissao: "arquiteto",
+    saudacao: function(){console.log("Oi mundo")}
 }
 
-numero = 40;
-if (30 >= numero){
-    console.log("é maior")
-} else if(30 != numero){
-    console.log("é diferente")
+console.log(pessoa)
+console.log(pessoa.nome)
+console.log(pessoa['profissao'])
+
+delete pessoa.profissao
+pessoa.saudacao()
+ */
+/* for(let i=0; i <= 5; i++){
+    if (i == 2){
+        continue
+    }
+    console.log(i)
+    if (i == 3){
+        break
+    }
 } */
 
-const numero = 6
-if (numero > 2 || numero < 6){
-    console.log("está no intervalo")
-}else{
-    console.log("não está no intervalo")
-}
+/* let i=0;
+while(i<5){
+    console.log(i)
+} */
+/* let i = 0
+do{
+    console.log(i);
+    i++
+}while( i <= 5 )  */
+
+
+const pessoas =[
+    {
+        nome: "Euclides",
+        idade: 22,
+        profissao: "Analista de sistemas"
+    },
+    {
+        nome: "Linton",
+        idade: 35,
+        profissao: "Analista de sistemas"
+    },
+    {
+        nome: "Adriana",
+        idade: 20,
+        profissao: "Analista de sistemas"
+    },
+    {
+        nome: "Francisco",
+        idade: 27,
+        profissao: "Analista de sistemas"
+    }
+]
+
+/* for(let c=0; c < pessoas.length; c++){
+    if(pessoas[c].idade > 22){
+        console.log(pessoas[c].nome," - ", pessoas[c].profissao);
+    }
+} */
+
+/* pessoas.map((pessoa)=>{
+    if(pessoa.idade>22){
+        console.log(pessoa)
+    }
+}) */
+
+const testePessoas = pessoas.filter((pessoa)=>pessoa.nome != "Euclides")
+console.log(testePessoas)
