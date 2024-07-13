@@ -55,7 +55,7 @@ do{
 }while( i <= 5 )  */
 
 
-const pessoas =[
+/* const pessoas =[
     {
         nome: "Euclides",
         idade: 22,
@@ -76,7 +76,7 @@ const pessoas =[
         idade: 27,
         profissao: "Analista de sistemas"
     }
-]
+] */
 
 /* for(let c=0; c < pessoas.length; c++){
     if(pessoas[c].idade > 22){
@@ -90,5 +90,25 @@ const pessoas =[
     }
 }) */
 
-const testePessoas = pessoas.filter((pessoa)=>pessoa.nome != "Euclides")
-console.log(testePessoas)
+/* const testePessoas = pessoas.filter((pessoa)=>pessoa.nome != "Euclides")
+console.log(testePessoas) */
+
+/* let a = ['a', 'b', 'c', 'b']
+s = a.slice(0,2)
+console.log(s) */
+
+/* var arr = ['Aula 3', 'Aula 2', 'Aula 1'];
+arr.push("Aula 4")
+
+console.log(arr)
+arr.sort()
+console.log(arr)
+
+console.log(arr.pop());
+console.log(arr.shift())
+console.log(arr)  */
+
+
+var arr = [1,2,3,4,5,6,7,8,9]
+const found = arr.find((e)=> e > 3)
+console.log(found)
